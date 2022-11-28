@@ -17,9 +17,6 @@ export const Profile = () => {
       region: '',
     },
   });
-  const [dataI, setDataI] = useState({
-    data: {},
-  });
   const locationPage = useLocation();
   const userId = new URLSearchParams(locationPage.search).get('id');
 
@@ -33,8 +30,7 @@ export const Profile = () => {
   useEffect(() => {
     getData();
   }, []);
-
-  console.log('data - ', data);
+  
   return (
     <Wrap>
       <FlexStart>
