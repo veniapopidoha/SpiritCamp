@@ -17,10 +17,10 @@ class Holovna extends React.Component {
 
   componentDidMount() {
     axios
-    .get('https://spiri-camp-user-registration.herokuapp.com')
-    .then((response) => this.setState({ data: response.data }));
+      .get('https://spiri-camp-user-registration.herokuapp.com')
+      .then((response) => this.setState({ data: response.data }));
   }
-  
+
   render() {
     return (
       <>
@@ -141,7 +141,7 @@ class Holovna extends React.Component {
               *Кошти можна буде повернути до 2 Січня
             </p>
             <a
-              href='http://localhost:3000/registration'
+              href='https://spiritcamp.site/registration'
               className='reg-button donate-button'
             >
               ЗАРЕЄСТРУВАТИСЬ
