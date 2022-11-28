@@ -43,8 +43,6 @@ class App extends React.Component {
             <Route exact path="/profile" element={<Profile/>} />
             <Route exact path="/success" element={<Success/>} />
             <Route exact path="/error" element={<Error/>} />
-            {/* <Route exact path="/pay" component={Pay} /> */}
-            <Route exact path="/zvit" element={<Ticket/>} />
           </Routes>
           <Footer/>
         </Router>
