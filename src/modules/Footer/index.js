@@ -12,7 +12,7 @@ export const Footer = () => {
   return(
     <Wrap>
       <div>
-        <Text href='tel:+380955262502'>095 52 62 502</Text>
+        <Text href='tel:+380955262502'>+380 (99) 026 27 17</Text>
         <Text href='mailto:ispirittime@gmail.com'>ispirittime@gmail.com</Text>
       </div>
       <Wrapper>

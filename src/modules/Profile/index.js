@@ -30,7 +30,7 @@ export const Profile = () => {
   useEffect(() => {
     getData();
   }, []);
-  
+
   return (
     <Wrap>
       <FlexStart>
@@ -63,6 +63,10 @@ export const Profile = () => {
         <Row>
           <Info>ID:</Info>
           <Info>{data.data._id}</Info>
+        </Row>
+        <Row>
+          <Info>Транспорт:</Info>
+          <Info>{data.data.transport}</Info>
         </Row>
       </FlexStart>
     </Wrap>

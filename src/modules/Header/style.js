@@ -43,14 +43,14 @@ export const StyledLink = styled(Link)`
   font-weight: bold;
   line-height: 1.33;
   letter-spacing: 0.6px;
-  color: ${({ $active }) => ($active ? '#F86A3B' : 'white' )};
+  color: ${({ $active }) => ($active ? '#1a0066' : 'white' )};
   text-decoration: none;
   text-transform: uppercase;
   :hover {
-    color: #F86A3B;
+    color: #4e89cc;
   }
   :focus {
-    color: #F86A3B;
+    color: #4e89cc;
   }
   @media screen and (max-width: 1024px){
     font-size: 15px;

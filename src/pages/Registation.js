@@ -100,8 +100,12 @@ class Registration extends React.Component {
       <div>
         <div className='comp reg'>
           <p className='title'>РЕЄСТРАЦІЯ</p>
-          {data.length <= 550 ? (
+          {data.length < 550 ? (
             <div>
+              <p className='attention'>
+                Зверніть увагу на введення вашої електронної пошти, адже на неї
+                прийде білет
+              </p>
               <form className='inputs' onSubmit={this.submitHandler}>
                 <div className='string'>
                   <div className='input_column'>

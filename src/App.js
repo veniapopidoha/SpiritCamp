@@ -9,8 +9,6 @@ import {
 } from "react-router-dom";
 
 import Registration from "./pages/Registation";
-import Zvit from "./pages/Zvit"
-import { MainPage } from './modules/MainPage';
 import { AboutCamp } from './modules/AboutCamp';
 import { Header } from './modules/Header';
 import { Footer } from './modules/Footer';
@@ -20,7 +18,8 @@ import { Profile } from './modules/Profile';
 import { Success } from './modules/Success';
 import { Error } from './modules/Error';
 import Holovna from './pages/holovna';
-import { Ticket } from './modules/Ticket/ticket';
+import { Snow } from './style';
+import snow from './img/snow.gif'
 
 class App extends React.Component {
   state = {
@@ -32,6 +31,7 @@ class App extends React.Component {
   render() {
     return (
         <Router>
+          {/* <Snow src={snow}/> */}
           <HamburgerMenu />
           <Header/>
           <Routes>

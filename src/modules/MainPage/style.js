@@ -143,7 +143,7 @@ export const Description = styled.p`
 `;
 
 export const RegButton = styled(Link)`
-  background-color: #f86a3b;
+  background-color: #1a0066;
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
@@ -157,10 +157,6 @@ export const RegButton = styled(Link)`
   z-index: 1000;
   width: 18vw !important;
   text-align: center;
-
-  :hover {
-    color: black;
-  }
   @media screen and (max-width: 1024px) {
     left: 68%;
     width: 22vw !important;
@@ -246,18 +242,18 @@ export const Num = styled.p`
   background-clip: text;
   background: #000;
   -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #f86a3b, #000);
+  background-image: linear-gradient(90deg, #4e89cc, #1a0066);
 `;
 
 export const Mem = styled.p`
   background-color: #000;
   -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #f86a3b, #000);
+  background-image: linear-gradient(90deg, #4e89cc, #1a0066);
   bottom: 10px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  line-height: 8px;
-  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 400;
   color: transparent;
   background-clip: text;
 `;

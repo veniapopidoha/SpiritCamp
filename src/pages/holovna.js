@@ -9,6 +9,7 @@ import cash from '../img/cash.svg';
 import chevoler from '../img/chevoler.png';
 import leo from '../img/leo.png';
 import aboutphoto from '../img/aboutcamp.png';
+import Registration from './Registation';
 
 class Holovna extends React.Component {
   state = {
@@ -32,12 +33,12 @@ class Holovna extends React.Component {
                 <div className='carousel_photo__text_item carousel_photo__text__date'>
                   <img src={calendar} width='50px' alt='' />
                   <p className='carousel_photo__text__date__text'>
-                    21 січня - 24 січня
+                    27 січня - 30 січня
                   </p>
                 </div>
                 <div className='carousel_photo__text_item carousel_photo__text__prise'>
                   <img src={cash} width='50px' alt='' />
-                  <p className='carousel_photo__text__prise__text'>2700грн</p>
+                  <p className='carousel_photo__text__prise__text'>4000грн</p>
                 </div>
                 <div className='carousel_photo__text_item_cost'>
                   *З &nbsp;1 Грудня ціна 2900 грн
@@ -122,7 +123,7 @@ class Holovna extends React.Component {
             </div>
           </div>
           <div id='registration' className='comp'>
-            <p className='title'>РЕЄСТРАЦІЯ</p>
+            {/* <p className='title'>РЕЄСТРАЦІЯ</p>
             <p className='registration'>
               *обмеження віку 15+
               <br />
@@ -149,7 +150,8 @@ class Holovna extends React.Component {
             <p className='takefriend'>
               "НЕ ЗАБУДЬ ПРО СВОГО ДРУГА <br />
               СКИНЬ ЙОМУ ПОСИЛАННЯ, МIСЦЯ ОБМЕЖЕНI"
-            </p>
+            </p> */}
+            <Registration/>
           </div>
           <div id='donate' className='comp'>
             <p className='title'>ПІДТРИМКА</p>

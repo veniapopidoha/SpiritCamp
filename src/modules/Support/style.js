@@ -47,7 +47,7 @@ export const Text = styled.p`
 export const Button = styled.a`
   left: 65%;
   padding: 10px 15px;
-  background-color: #F86A3B;
+  background-color: #1a0066;
   text-decoration: none;
   text-align: center;
   color: #ffffff;
@@ -59,9 +59,6 @@ export const Button = styled.a`
   bottom: 5%;
   z-index: 1000;
   width: 20%;
-  :hover {
-    color: black;
-  }
   @media screen and (max-width: 1280px) {
     width: 200px;
     margin-top: 20px;
