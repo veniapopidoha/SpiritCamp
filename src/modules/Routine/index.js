@@ -15,24 +15,35 @@ export const Routine = () => {
             <Text>20:00 - відкриття</Text>
           </Day>
           <Day>
-            <SubTitle>П'ЯТНИЦЯ</SubTitle>
-            <Text>поселення</Text>
-            <Text>вечеря</Text>
-            <Text>відкриття</Text>
+            
+            <SubTitle>СУБОТА</SubTitle>
+            <Text>Сніданок</Text>
+            <Text>Служіння</Text>
+            <Text>Обід</Text>
+            <Text>Вільний час</Text>
+            <Text>Семінар</Text>
+            <Text>Спілкування</Text>
+            <Text>Вечеря</Text>
+            <Text>Служіння</Text>
           </Day>
         </Row>
         <Row>
           <Day>
-            <SubTitle>П'ЯТНИЦЯ</SubTitle>
-            <Text>поселення</Text>
-            <Text>вечеря</Text>
-            <Text>відкриття</Text>
+            <SubTitle>НЕДІЛЯ</SubTitle>
+            <Text>Сніданок</Text>
+            <Text>Служіння</Text>
+            <Text>Обід</Text>
+            <Text>Вільний час</Text>
+            <Text>Семінар</Text>
+            <Text>Спілкування</Text>
+            <Text>Вечеря</Text>
+            <Text>Служіння</Text>
+            <Text>Закриття</Text>
           </Day>
           <Day>
-            <SubTitle>П'ЯТНИЦЯ</SubTitle>
-            <Text>поселення</Text>
-            <Text></Text>
-            <Text>відкриття</Text>
+            <SubTitle>ПОНЕДІЛОК</SubTitle>
+            <Text>Сніданок</Text>
+            <Text>Роз'їзд після 10:00</Text>
           </Day>
         </Row>
       </Wrapper>

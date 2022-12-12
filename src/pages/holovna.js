@@ -41,7 +41,8 @@ class Holovna extends React.Component {
                   <p className='carousel_photo__text__prise__text'>4000грн</p>
                 </div>
                 <div className='carousel_photo__text_item_cost'>
-                  *З &nbsp;1 Грудня ціна 2900 грн
+                  {/* *З &nbsp;1 Грудня ціна 2900 грн */}
+                  * встигни зареєструватись
                 </div>
                 <div className='members-mobile'>
                   <p className='num'>{550 - this.state.data.length}</p>
