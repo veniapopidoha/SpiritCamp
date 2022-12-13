@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Dots = styled.div`
+  height: 30px;
+
   .dots-flow:before {
     -webkit-animation: dots-flow 0.85s infinite ease;
     animation: dots-flow 0.85s infinite ease;

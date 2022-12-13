@@ -342,7 +342,7 @@ select {
 }
 .reg {
   height: 130vh;
-  width: 100vh;
+  width: 100vw;
 }
 .about-text {
   color: #ffffff;
@@ -868,7 +868,7 @@ p {
     flex-direction: column-reverse !important;
   }
   .about-page {
-    height: 290vh;
+    height: 230vh;
   }
   .program-page {
     display: none;

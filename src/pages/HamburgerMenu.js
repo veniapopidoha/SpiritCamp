@@ -142,11 +142,11 @@ function HamburgerMenu() {
               ПРО ТАБІР
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="mobile-nav" onClick={handleClick} href="#program">
               ПРОГРАМА
             </a>
-          </li>
+          </li> */}
           <li>
             <a className="mobile-nav" onClick={handleClick} href="#registration">
               РЕЄСТРАЦІЯ

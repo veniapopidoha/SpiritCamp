@@ -10,22 +10,25 @@ import chevoler from '../img/chevoler.png';
 import leo from '../img/leo.png';
 import aboutphoto from '../img/aboutcamp.png';
 import Registration from './Registation';
+import { Dots } from '../modules/Registration/loading';
 
 class Holovna extends React.Component {
   state = {
     data: [],
+    loading: true,
   };
 
-  componentDidMount() {
-    axios
+  async componentDidMount() {
+    await axios
       .get('https://spiri-camp-user-registration.herokuapp.com')
       .then((response) => this.setState({ data: response.data }));
+    this.setState({ loading: false });
   }
 
   render() {
     return (
       <>
-        <MainPage data={this.state.data} />
+        <MainPage loading={this.state.loading} data={this.state.data} />
         <div className='mobile-pages'>
           <div id='holovna' className='holovna-mobile'>
             <div className='carousel_photo__text__block'>
@@ -41,11 +44,11 @@ class Holovna extends React.Component {
                   <p className='carousel_photo__text__prise__text'>4000грн</p>
                 </div>
                 <div className='carousel_photo__text_item_cost'>
-                  {/* *З &nbsp;1 Грудня ціна 2900 грн */}
-                  * встигни зареєструватись
+                  {/* *З &nbsp;1 Грудня ціна 2900 грн */}* встигни
+                  зареєструватись
                 </div>
                 <div className='members-mobile'>
-                  <p className='num'>{550 - this.state.data.length}</p>
+                  {this.state.loading !== true ? <p className='num'>{550 - this.state.data.length}</p> : <Dots><p className='dots-flow'></p></Dots>}
                   <br />
                   <p className='mem'>*залишилось місць</p>
                 </div>
@@ -117,12 +120,12 @@ class Holovna extends React.Component {
               </div>
             </div>
           </div>
-          <div id='program' className='comp mobile-program'>
+          {/* <div id='program' className='comp mobile-program'>
             <p className='title'>ПРОГРАМА</p>
             <div className='carousel'>
               <CarouselBox />
             </div>
-          </div>
+          </div> */}
           <div id='registration' className='comp'>
             {/* <p className='title'>РЕЄСТРАЦІЯ</p>
             <p className='registration'>
@@ -152,7 +155,7 @@ class Holovna extends React.Component {
               "НЕ ЗАБУДЬ ПРО СВОГО ДРУГА <br />
               СКИНЬ ЙОМУ ПОСИЛАННЯ, МIСЦЯ ОБМЕЖЕНI"
             </p> */}
-            <Registration/>
+            <Registration />
           </div>
           <div id='donate' className='comp'>
             <p className='title'>ПІДТРИМКА</p>

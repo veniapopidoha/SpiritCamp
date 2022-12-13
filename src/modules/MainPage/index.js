@@ -24,6 +24,7 @@ import { Link } from 'react-router-dom';
 import calendar from '../../img/calendar.svg';
 import cash from '../../img/cash.svg';
 import playmobile from '../../img/play.png';
+import { Dots } from '../Registration/loading';
 
 export const MainPage = (props) => {
   return (
@@ -60,7 +61,7 @@ export const MainPage = (props) => {
         <VideoText>як це було</VideoText>
       </VideoWrap>
       <Members>
-        <Num>{550 - props.data.length}</Num>
+        { props.loading !== true ? <Num>{550 - props.data.length}</Num> : <Dots><p className='dots-flow'></p></Dots>}
         <Mem>*залишилось місць</Mem>
       </Members>
     </Wrap>
