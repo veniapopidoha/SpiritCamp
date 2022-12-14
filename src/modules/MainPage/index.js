@@ -61,7 +61,13 @@ export const MainPage = (props) => {
         <VideoText>як це було</VideoText>
       </VideoWrap>
       <Members>
-        { props.loading !== true ? <Num>{550 - props.data.length}</Num> : <Dots><p className='dots-flow'></p></Dots>}
+        {props.loading !== true ? (
+          <Num>{550 - props.data.length}</Num>
+        ) : (
+          <Dots>
+            <p className='dots-flow'></p>
+          </Dots>
+        )}
         <Mem>*залишилось місць</Mem>
       </Members>
     </Wrap>

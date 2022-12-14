@@ -7,7 +7,7 @@ import playmobile from '../img/play.png';
 import calendar from '../img/calendar.svg';
 import cash from '../img/cash.svg';
 import chevoler from '../img/chevoler.png';
-import leo from '../img/leo.png';
+import speaker from '../img/speaker.png';
 import aboutphoto from '../img/aboutcamp.png';
 import Registration from './Registation';
 import { Dots } from '../modules/Registration/loading';
@@ -48,7 +48,13 @@ class Holovna extends React.Component {
                   зареєструватись
                 </div>
                 <div className='members-mobile'>
-                  {this.state.loading !== true ? <p className='num'>{550 - this.state.data.length}</p> : <Dots><p className='dots-flow'></p></Dots>}
+                  {this.state.loading !== true ? (
+                    <p className='num'>{550 - this.state.data.length}</p>
+                  ) : (
+                    <Dots>
+                      <p className='dots-flow'></p>
+                    </Dots>
+                  )}
                   <br />
                   <p className='mem'>*залишилось місць</p>
                 </div>
@@ -78,18 +84,23 @@ class Holovna extends React.Component {
                 <h1 className='about-title base'>БАЗА CHEVALIER PANORAMA</h1>
               </div>
               <div className='about-group about-group-speaker'>
-                <h1 className='about-title reverse'>СПІКЕР ЛЕО ФРАНК</h1>
+                <h1 className='about-title reverse'>СПІКЕР РОСТИСЛАВ МУРАХ </h1>
                 <p className='about-text speaker '>
                   {' '}
-                  Служитель в п’ятидесятницькій російськомовній церкві в
-                  Німеччині, а служить російсько - німецькомовним християнам в
-                  Росії, Україні, Казахстані, Прибалтиці, Німеччині, Канаді та
-                  США. Виступає, як учитель в різних напрямках: від академічних
-                  семінарів до участі в молодіжних конференціях, сімейних
-                  семінарах.
+                  Єпископ Хмельницької області, Україна. Пастор церкви «Світло
+                  Христове» м. Камянець-Подільський, яка являється материнською
+                  церквою декількох церков. Також в 2010 році відкриває церкву
+                  «Благодать Христа» у м. Хмельницький, де також являється
+                  пастором. Ставить собі за мету щоби у кожному районі
+                  Хмельницької області і в кожному районі більших міст була
+                  євангельська церква, сповідуючи принцип «краще 5 невеликих
+                  церков чим одна мега церква» У пасторському служінні велику
+                  увагу приділяє «вихованю» нових служителів. Являючись відомим
+                  спікером, часто можна побачити на різних конференціях,
+                  семінарах, також викладає у Богословських семінаріях.
                 </p>
 
-                <img className='about-picture-speaker' src={leo} />
+                <img className='about-picture-speaker' src={speaker} />
               </div>
               <div className='about-group '>
                 <img className='about-picture' src={aboutphoto} />

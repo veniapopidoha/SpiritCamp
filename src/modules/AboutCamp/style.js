@@ -106,6 +106,6 @@ export const ReverseSubTitle = styled(SubTitle)`
 
 
 export const SpeakerImage = styled(Image)`
-  width:250px !important;
+  width:300px !important;
   height:280px !important;
 `;

@@ -630,9 +630,7 @@ p {
   .reg {
     height: 360vh;
   }
-  .inputs {
-    /* padding-top: 60px ; */
-  }
+
   .takefriend {
     font-size: 14px;
     display: block;
@@ -868,7 +866,7 @@ p {
     flex-direction: column-reverse !important;
   }
   .about-page {
-    height: 230vh;
+    height: 250vh;
   }
   .program-page {
     display: none;
@@ -904,7 +902,7 @@ p {
     height: 150px !important;
   }
   .about-picture-speaker {
-    width: 250px !important;
+    width: 300px !important;
     height: 280px !important;
   }
   .program_day_text {
@@ -961,6 +959,9 @@ p {
   .reg-button {
     font-size: 9px;
     margin: 20px 40px;
+  }
+  .title {
+    left: 5vh;
   }
 }
 

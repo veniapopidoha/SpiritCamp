@@ -6,6 +6,7 @@ export const TextWrap = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 export const AnimatedText = styled.div`
   html,
   body {
@@ -21,8 +22,8 @@ export const AnimatedText = styled.div`
   svg {
     display: block;
     font: 10.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
+    width: 100vw;
+    height: 50vh;
     margin: 0 auto;
   }
 
@@ -33,6 +34,9 @@ export const AnimatedText = styled.div`
     stroke-width: 5px;
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
+    @media screen and (max-width: 1024px) {
+      font-size: 140px !important;
+    }
   }
 
   .text-copy:nth-child(1) {
@@ -88,6 +92,20 @@ export const AText = styled.div`
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-size: 100px;
+    @media screen and (max-width: 1024px) {
+      font-size: 70px !important;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 60px !important;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 40px !important;
+      position: relative;
+      top: -15vh;
+    }
+    @media screen and (max-width: 300px) {
+      font-size: 30px !important;
+    }
   }
 
   @keyframes textclip {
